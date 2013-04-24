@@ -7,6 +7,7 @@
 
 * 下载 & 安装
 点这里直接下载最新安装包：https://github.com/wuyao721/gopuls/raw/master/安装包/goplus-0.725.zip
+
 <<熊猫围棋助手>>为绿色版本，解压运行即可。
 
 * 使用方法

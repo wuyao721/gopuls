@@ -1,0 +1,8 @@
+编译生成GoPlus需要如下步骤：
+
+1. http://code.google.com/p/goplus/downloads/list 下载源代码，或svn下载http://goplus.googlecode.com/svn/trunk/
+2. http://premake.sourceforge.net/ 下载premake4工具
+3. http://pocoproject.org/ 下载Poco开发库
+4. 下载AI引擎gnugo和fuego
+5. 编译premake4.lua，生成VC解决方案
+6. 将Poco开发库放到合适的位置，编译生成GoPlus

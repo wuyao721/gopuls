@@ -1,0 +1,191 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SETTING DIALOGEX 0, 0, 198, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,27,106,50,14
+    PUSHBUTTON      "取消",IDCANCEL,120,106,50,14
+    GROUPBOX        "外挂方式",IDC_STATIC,17,15,161,47
+    CONTROL         "代理下棋",IDC_CHECK_PROXY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,31,48,10
+    CONTROL         "画出标记",IDC_CHECK_MARK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,47,48,10
+    COMBOBOX        IDC_COMBO_AI_ENGINE,60,68,131,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "智能引擎：",IDC_STATIC,15,68,41,8
+    COMBOBOX        IDC_COMBO_GO_BOARD,60,86,131,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "应用程序：",IDC_STATIC,15,86,41,8
+    CONTROL         "自动开始",IDC_CHECK_AUTO_START,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,31,48,10
+    CONTROL         "自动PASS",IDC_CHECK_AUTO_PASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,31,49,10
+    CONTROL         "自动认输",IDC_CHECK_AUTO_RESIGN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,47,48,10
+END
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 223, 98
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    ICON            IDI_STEALTHDLG,IDC_MYICON,14,20,20,20
+    LTEXT           "熊猫围棋助手(GoPlus)",IDC_STATIC,49,14,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,177,68,30,13,WS_GROUP
+    LTEXT           "版本：0.725",IDC_STATIC,49,42,119,8,SS_NOPREFIX
+    LTEXT           "作者：吴遥(wuyao721@163.com)",IDC_STATIC,49,56,119,8,SS_NOPREFIX
+    LTEXT           "更新时间：2012/3/8",IDC_STATIC,49,70,119,8,SS_NOPREFIX
+    LTEXT           "官网下载：http://code.google.com/p/goplus/",IDC_STATIC,49,28,150,8
+END
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 124, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_APPWINDOW
+CAPTION "熊猫围棋助手(GoPlus)"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "设置",IDC_BUTTON_SETTING,80,26,32,14
+    PUSHBUTTON      "开始",IDC_BUTTON_START_STOP,80,10,32,14
+    PUSHBUTTON      "分析",IDC_BUTTON_ANALYSIS_SITUATION,79,42,32,14
+    CONTROL         "黑棋",IDC_RADIO_BLACK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,18,32,10
+    CONTROL         "白棋",IDC_RADIO_WHITE,"Button",BS_AUTORADIOBUTTON,41,18,32,10
+    GROUPBOX        "执(黑/白)",IDC_STATIC,7,7,68,26
+    LTEXT           "",IDC_STATIC_OUTPUT,16,74,92,19
+    GROUPBOX        "输出",IDC_STATIC,7,62,110,35
+    GROUPBOX        "提子数",IDC_STATIC,7,34,68,26
+    LTEXT           "黑：",IDC_STATIC_CAPTURES_BLACK,11,46,26,8
+    LTEXT           "白：",IDC_STATIC_CAPTURES_WHITE,43,46,26,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 219
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_STEALTHDLG          ICON                    "StealthDialog.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_STEALTHDIALOG ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
